@@ -1,0 +1,13 @@
+name: Bill reminders
+on:
+  schedule:
+    - cron: "0 16 * * *"   # about 8-9am Pacific
+  workflow_dispatch:
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python reminders.py
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
