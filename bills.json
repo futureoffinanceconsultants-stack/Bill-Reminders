@@ -1,0 +1,8 @@
+{
+  "remind_days_before": [5, 1, 0],
+  "bills": [
+    { "name": "Chase card", "amount": 150, "day_of_month": 15 },
+    { "name": "Rent", "amount": 1800, "day_of_month": 1 },
+    { "name": "Electric", "amount": 90, "day_of_month": 22 }
+  ]
+}
